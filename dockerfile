@@ -1,5 +1,6 @@
 FROM tomcat
-COPY abctechnologies.war /usr/local/tomcat/webapps/
-CMD ["catalina.sh", "run"]
+COPY abctechnologies.war /usr/local/tomcat/
+EXPOSE [8080]
+CMD ["catalina.sh"]
 
 
