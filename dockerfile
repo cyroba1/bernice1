@@ -1,5 +1,3 @@
-COPY abctechnologies.war /usr/local/tomcat/
+COPY ABCtechnologies.war /usr/local/tomcat/webapps/
 EXPOSE [8080]
-CMD ["catalina.sh"]
-
-
+CMD ["catalina.sh", "run"]
